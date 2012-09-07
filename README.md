@@ -2,7 +2,7 @@
 > Compile YUIDoc Documentation (part of the [grunt-contrib](/gruntjs/grunt-contrib) collection).  Submitted by [George Pantazis](/gcpantazis).
 
 ## Getting Started
-Install this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: `npm install grunt-contrib-less`
+Install this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: `npm install grunt-contrib-yuidoc`
 
 Then add this line to your project's `grunt.js` gruntfile:
 
