@@ -1,5 +1,5 @@
 # grunt-contrib-yuidoc
-> Compile YUIDoc Documentation (part of the [grunt-contrib](/gruntjs/grunt-contrib) collection).  Submitted by [George Pantazis](/gcpantazis).
+> Compile YUIDoc Documentation (part of the [grunt-contrib](https://github.com/gruntjs/grunt-contrib) collection).  Submitted by [George Pantazis](https://github.com/gcpantazis).
 
 ## Getting Started
 Install this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: `npm install grunt-contrib-yuidoc`

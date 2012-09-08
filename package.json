@@ -1,7 +1,7 @@
 {
   "name": "grunt-contrib-yuidoc",
   "description": "Compile YUIDoc Documentation.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://github.com/gruntjs/grunt-contrib-yuidoc",
   "author": {
     "name": "George Pantazis",
@@ -28,12 +28,12 @@
     "test": "grunt test"
   },
   "dependencies": {
+    "yuidocjs": "~0.3.14",
     "grunt-contrib-lib": "~0.1.0",
-    "yuidocjs": "~0.3.14"
+    "grunt-contrib-clean": "~0.1.0"
   },
   "devDependencies": {
-    "grunt": "~0.3.15",
-    "grunt-contrib-clean": "~0.1.0"
+    "grunt": "~0.3.15"
   },
   "keywords": [
     "gruntplugin"

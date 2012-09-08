@@ -8,16 +8,17 @@
  */
 
 module.exports = function(grunt) {
-  "use strict";
+  'use strict';
 
   // TODO: ditch this when grunt v0.4 is released
   grunt.util = grunt.util || grunt.utils;
-  var Y = require("yuidocjs");
-  var helpers = require("grunt-contrib-lib").init(grunt);
+
   var kindOf = grunt.util.kindOf;
+  var helpers = require('grunt-contrib-lib').init(grunt);
 
-  grunt.registerMultiTask("yuidoc", "Create YUIDocs", function() {
+  var Y = require('yuidocjs');
 
+  grunt.registerMultiTask('yuidoc', 'Create YUIDocs', function() {
     var done = this.async();
     var starttime = (new Date()).getTime();
     var json;
@@ -31,21 +32,21 @@ module.exports = function(grunt) {
     // 'project'
     options.project = this.data;
 
-    grunt.verbose.writeflags(options, "Options");
+    grunt.verbose.writeflags(options, 'Options');
 
     // Catch if required fields are not provided.
     if ( !options.paths ) {
-      grunt.fail.warn("No path(s) provided for YUIDoc to scan.");
+      grunt.fail.warn('No path(s) provided for YUIDoc to scan.');
     }
     if ( !options.outdir ) {
-      grunt.fail.warn("You must specify a directory for YUIDoc output.");
+      grunt.fail.warn('You must specify a directory for YUIDoc output.');
     }
 
     // ensure destination dir is available
     grunt.file.mkdir(options.outdir);
 
     // Input path: array expected, but grunt conventions allows for either a string or an array.
-    if (kindOf(options.paths) === "string") {
+    if (kindOf(options.paths) === 'string') {
       options.paths = [ options.paths ];
     }
 
@@ -56,13 +57,13 @@ module.exports = function(grunt) {
     if (!options.parseOnly) {
       var builder = new Y.DocBuilder(options, json);
 
-      grunt.log.writeln("Start YUIDoc compile...");
-      grunt.log.writeln("Scanning: " + grunt.log.wordlist(options.paths));
-      grunt.log.writeln("Output: " + (options.outdir).cyan);
+      grunt.log.writeln('Start YUIDoc compile...');
+      grunt.log.writeln('Scanning: ' + grunt.log.wordlist(options.paths));
+      grunt.log.writeln('Output: ' + (options.outdir).cyan);
 
       builder.compile(function() {
         var endtime = (new Date()).getTime();
-        grunt.log.writeln("YUIDoc compile completed in " + ((endtime - starttime) / 1000) + " seconds");
+        grunt.log.writeln('YUIDoc compile completed in ' + ((endtime - starttime) / 1000) + ' seconds');
         done();
       });
     }
