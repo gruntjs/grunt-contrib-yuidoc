@@ -13,12 +13,11 @@ module.exports = function(grunt) {
   // TODO: ditch this when grunt v0.4 is released
   grunt.util = grunt.util || grunt.utils;
 
-  var kindOf = grunt.util.kindOf;
-  var helpers = require('grunt-contrib-lib').init(grunt);
-
-  var Y = require('yuidocjs');
-
   grunt.registerMultiTask('yuidoc', 'Create YUIDocs', function() {
+
+    var kindOf = grunt.util.kindOf;
+    var helpers = require('grunt-contrib-lib').init(grunt);
+    var Y = require('yuidocjs');
     var done = this.async();
     var starttime = (new Date()).getTime();
     var json;
