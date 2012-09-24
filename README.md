@@ -1,4 +1,4 @@
-# grunt-contrib-yuidoc
+# grunt-contrib-yuidoc [![Build Status](https://secure.travis-ci.org/gruntjs/grunt-contrib-yuidoc.png?branch=master)](http://travis-ci.org/gruntjs/grunt-contrib-yuidoc)
 > Compile YUIDoc Documentation (part of the [grunt-contrib](https://github.com/gruntjs/grunt-contrib) collection).  Submitted by [George Pantazis](https://github.com/gcpantazis).
 
 ## Getting Started
