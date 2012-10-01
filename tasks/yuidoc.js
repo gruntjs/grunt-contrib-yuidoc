@@ -27,6 +27,7 @@ module.exports = function(grunt) {
     });
 
     // process project data templates
+    // TODO: ditch this when grunt v0.4 is released
     var _ = grunt.util._;
     var projectData = {};
     _.each(this.data, function(value, key) {
