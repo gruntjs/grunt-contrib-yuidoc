@@ -54,5 +54,6 @@ yuidoc: {
 
 ## Release History
 
-* 2012/08/23 - v0.3.0 - Options no longer accepted from global config key.
-* 2012/08/10 - v0.2.0 - Refactored from grunt-contrib into individual repo.
+* 2012/10/01 - v0.3.1 - Project options are parsed as templates.
+* 2012/09/23 - v0.3.0 - Options no longer accepted from global config key.
+* 2012/09/10 - v0.2.0 - Refactored from grunt-contrib into individual repo.
