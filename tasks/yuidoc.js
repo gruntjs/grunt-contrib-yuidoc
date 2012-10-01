@@ -26,10 +26,19 @@ module.exports = function(grunt) {
       quiet: true
     });
 
+    // process project data templates
+    var _ = grunt.util._;
+    var projectData = {};
+    _.each(this.data, function(value, key) {
+      if (kindOf(value) === 'string') {
+        projectData[key] = grunt.template.process(value);
+      }
+    });
+
     // when invoking yuidocs via node, the project details
     // are assigned under the options object using the key
     // 'project'
-    options.project = this.data;
+    options.project = projectData;
 
     grunt.verbose.writeflags(options, 'Options');
 
