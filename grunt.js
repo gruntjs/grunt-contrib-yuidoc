@@ -12,6 +12,8 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+
     lint: {
       all: ['grunt.js', 'tasks/*.js', '<config:nodeunit.tasks>']
     },
@@ -62,6 +64,17 @@ module.exports = function(grunt) {
             'test/fixtures/otherapp/'
           ],
           outdir: 'tmp/yuidocb/'
+        }
+      },
+
+      compileC: {
+        'name': "Grunt Test <%= 'Title' %>",
+        'description': 'Description Text for <%= pkg.name %>',
+        'version': '<%= pkg.version %>',
+        'url': 'http://test.com/',
+        options: {
+          paths: 'test/fixtures/app/',
+          outdir: 'tmp/yuidocc/'
         }
       }
     },
