@@ -4,7 +4,6 @@
  *
  * Copyright (c) 2012 George Pantazis, contributors
  * Licensed under the MIT license.
- * https://github.com/gruntjs/grunt-contrib-yuidoc/blob/master/LICENSE-MIT
  */
 
 module.exports = function(grunt) {
