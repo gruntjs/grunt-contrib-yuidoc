@@ -1,5 +1,6 @@
 # grunt-contrib-yuidoc [![Build Status](https://secure.travis-ci.org/gruntjs/grunt-contrib-yuidoc.png?branch=master)](http://travis-ci.org/gruntjs/grunt-contrib-yuidoc)
-> Compile YUIDoc Documentation (part of the [grunt-contrib](https://github.com/gruntjs/grunt-contrib) collection).  Submitted by [George Pantazis](https://github.com/gcpantazis).
+
+> Compile YUIDoc Documentation.
 
 ## Getting Started
 Install this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: `npm install grunt-contrib-yuidoc`
@@ -57,3 +58,7 @@ yuidoc: {
 * 2012/10/01 - v0.3.1 - Project options are parsed as templates.
 * 2012/09/23 - v0.3.0 - Options no longer accepted from global config key.
 * 2012/09/10 - v0.2.0 - Refactored from grunt-contrib into individual repo.
+
+--
+
+*Task submitted by [George Pantazis](https://github.com/gcpantazis).*
