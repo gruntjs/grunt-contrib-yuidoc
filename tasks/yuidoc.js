@@ -15,7 +15,7 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('yuidoc', 'Create YUIDocs', function() {
 
     var kindOf = grunt.util.kindOf;
-    var helpers = require('grunt-contrib-lib').init(grunt);
+    var helpers = require('grunt-lib-contrib').init(grunt);
     var Y = require('yuidocjs');
     var done = this.async();
     var starttime = (new Date()).getTime();
