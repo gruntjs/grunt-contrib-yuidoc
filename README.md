@@ -26,6 +26,47 @@ If the plugin has been installed correctly, running `grunt --help` at the comman
 [package.json]: https://npmjs.org/doc/json.html
 
 
+## The yuidoc task
+
+### Overview
+
+In your project's Gruntfile, add a section named `yuidoc` to the data object passed into `grunt.initConfig()`.
+
+```js
+grunt.initConfig({
+  yuidoc: {
+    options: {
+      // Task-specific options go here.
+    },
+    your_target: {
+      // Target-specific file lists and/or options go here.
+    },
+  },
+})
+```
+
+[Visit the YUIDoc project home](http://yui.github.com/yuidoc/) for more information on YUIDocs and commenting syntax.
+### Options
+
+Settings mirror [YUIDoc config](http://yui.github.com/yuidoc/args/index.html).
+### Examples
+
+```js
+yuidoc: {
+  pkg: grunt.file.readJSON('package.json'),
+  compile: {
+    name: '<%= pkg.name %>'
+    description: '<%= pkg.description %>',
+    version: '<%= pkg.version %>',
+    url: '<%= pkg.homepage %>',
+    options: {
+      paths: 'path/to/source/code/',
+      outdir: 'where/to/save/docs/'
+    }
+  }
+}
+```
+
 ## Release History
 
  * 2012-10-11 - v0.3.2 - Rename grunt-contrib-lib dep to grunt-lib-contrib.
@@ -36,4 +77,4 @@ If the plugin has been installed correctly, running `grunt --help` at the comman
 --
 Task submitted by <a href="http://georgepantazis.com/">George Pantazis</a>.
 
-*Generated on Thu Oct 18 2012 17:04:34.*
+*Generated on Thu Oct 18 2012 17:14:19.*
