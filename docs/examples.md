@@ -2,14 +2,15 @@
 
 ```js
 yuidoc: {
+  pkg: grunt.file.readJSON('package.json'),
   compile: {
-    "name": "Project Name",
-    "description": "Project Description",
-    "version": "1.0.2",
-    "url": "http://projecturl.com/",
+    name: '<%= pkg.name %>'
+    description: '<%= pkg.description %>',
+    version: '<%= pkg.version %>',
+    url: '<%= pkg.homepage %>',
     options: {
-      paths: "path/to/source/code/",
-      outdir: "where/to/save/docs/"
+      paths: 'path/to/source/code/',
+      outdir: 'where/to/save/docs/'
     }
   }
 }
