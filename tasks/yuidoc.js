@@ -6,11 +6,9 @@
  * Licensed under the MIT license.
  */
 
-module.exports = function(grunt) {
-  'use strict';
+'use strict';
 
-  // TODO: ditch this when grunt v0.4 is released
-  grunt.util = grunt.util || grunt.utils;
+module.exports = function(grunt) {
 
   grunt.registerMultiTask('yuidoc', 'Create YUIDocs', function() {
 
@@ -21,17 +19,15 @@ module.exports = function(grunt) {
     var starttime = (new Date()).getTime();
     var json;
 
-    var options = helpers.options(this, {
+    var options = this.options({
       quiet: true
     });
 
     // process project data templates
-    // TODO: ditch this when grunt v0.4 is released
-    var _ = grunt.util._;
     var projectData = {};
-    _.each(this.data, function(value, key) {
+    grunt.util._.each(this.data, function(value, key) {
       if (kindOf(value) === 'string') {
-        projectData[key] = grunt.template.process(value);
+        projectData[key] = value;
       }
     });
 
@@ -57,7 +53,6 @@ module.exports = function(grunt) {
     if (kindOf(options.paths) === 'string') {
       options.paths = [ options.paths ];
     }
-
     json = (new Y.YUIDoc(options)).run();
 
     options = Y.Project.mix(json, options);

@@ -1,3 +1,5 @@
+# Options
+
 ##### options ```object```
 
 This controls how this task operates and should contain key:value pairs, see options below.
