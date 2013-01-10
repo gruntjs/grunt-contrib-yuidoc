@@ -23,6 +23,8 @@ _This task is a [multi task][] so any targets, files and options should be speci
 
 [Visit the YUIDoc project home](http://yui.github.com/yuidoc/) for more information on YUIDocs and commenting syntax.
 
+_Version `0.4.x` of this plugin is compatible with Grunt `0.4.x`. Version `0.3.x` of this plugin is compatible with Grunt `0.3.x`._
+
 ### Options
 
 Settings mirror [YUIDoc config](http://yui.github.com/yuidoc/args/index.html).
@@ -47,6 +49,7 @@ yuidoc: {
 
 ## Release History
 
+ * 2013-01-08   v0.4.0rc5   Updating to work with grunt v0.4.0rc5.
  * 2012-10-11   v0.3.2   Rename grunt-contrib-lib dep to grunt-lib-contrib.
  * 2012-09-30   v0.3.1   Project options are parsed as templates.
  * 2012-09-22   v0.3.0   Options no longer accepted from global config key.
@@ -56,4 +59,4 @@ yuidoc: {
 
 Task submitted by [George Pantazis](http://georgepantazis.com/)
 
-*This file was generated on Wed Nov 28 2012 08:50:12.*
+*This file was generated on Wed Jan 09 2013 17:08:47.*
