@@ -49,6 +49,7 @@ yuidoc: {
 
 ## Release History
 
+ * 2013-01-22   v0.4.0rc7   Updating grunt/gruntplugin dependencies to rc7. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.
  * 2013-01-08   v0.4.0rc5   Updating to work with grunt v0.4.0rc5.
  * 2012-10-11   v0.3.2   Rename grunt-contrib-lib dep to grunt-lib-contrib.
  * 2012-09-30   v0.3.1   Project options are parsed as templates.
@@ -59,4 +60,4 @@ yuidoc: {
 
 Task submitted by [George Pantazis](http://georgepantazis.com/)
 
-*This file was generated on Wed Jan 09 2013 17:08:47.*
+*This file was generated on Wed Jan 23 2013 11:56:57.*
