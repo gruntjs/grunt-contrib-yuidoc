@@ -11,7 +11,7 @@ npm install grunt-contrib-yuidoc --save-dev
 ```
 
 [grunt]: http://gruntjs.com/
-[Getting Started]: https://github.com/gruntjs/grunt/blob/devel/docs/getting_started.md
+[Getting Started]: http://gruntjs.com/getting-started
 
 
 ## Yuidoc task
@@ -60,4 +60,4 @@ yuidoc: {
 
 Task submitted by [George Pantazis](http://georgepantazis.com/)
 
-*This file was generated on Wed Jan 23 2013 11:56:57.*
+*This file was generated on Tue Feb 05 2013 12:41:59.*
