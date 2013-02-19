@@ -33,19 +33,21 @@ Settings mirror [YUIDoc config](http://yui.github.com/yuidoc/args/index.html).
 ### Usage Examples
 
 ```js
-yuidoc: {
+grunt.initConfig({
   pkg: grunt.file.readJSON('package.json'),
-  compile: {
-    name: '<%= pkg.name %>'
-    description: '<%= pkg.description %>',
-    version: '<%= pkg.version %>',
-    url: '<%= pkg.homepage %>',
-    options: {
-      paths: 'path/to/source/code/',
-      outdir: 'where/to/save/docs/'
+  yuidoc: {
+    compile: {
+      name: '<%= pkg.name %>'
+      description: '<%= pkg.description %>',
+      version: '<%= pkg.version %>',
+      url: '<%= pkg.homepage %>',
+      options: {
+        paths: 'path/to/source/code/',
+        outdir: 'where/to/save/docs/'
+      }
     }
   }
-}
+});
 ```
 
 
@@ -63,4 +65,4 @@ yuidoc: {
 
 Task submitted by [George Pantazis](http://georgepantazis.com/)
 
-*This file was generated on Mon Feb 18 2013 09:01:08.*
+*This file was generated on Mon Feb 18 2013 19:34:05.*
