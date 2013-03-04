@@ -15,7 +15,7 @@ module.exports = function(grunt) {
     var kindOf = grunt.util.kindOf;
     var Y = require('yuidocjs');
     var done = this.async();
-    var starttime = (new Date()).getTime();
+    var starttime = Date.now();
     var json;
 
     var options = this.options({
