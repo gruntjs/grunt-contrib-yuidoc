@@ -64,7 +64,7 @@ module.exports = function(grunt) {
       grunt.log.writeln('Output: ' + (options.outdir).cyan);
 
       builder.compile(function() {
-        var endtime = (new Date()).getTime();
+        var endtime = Date.now();
         grunt.log.writeln('YUIDoc compile completed in ' + ((endtime - starttime) / 1000) + ' seconds');
         done();
       });
