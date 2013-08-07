@@ -1,11 +1,6 @@
 var grunt = require('grunt');
 
-// TODO: ditch this when grunt v0.4 is released
-var fs = require('fs');
-var path = require('path');
-grunt.file.exists = grunt.file.exists || fs.existsSync || path.existsSync;
-
-exports['yuidoc'] = {
+exports.yuidoc = {
   main: function(test) {
     'use strict';
 
