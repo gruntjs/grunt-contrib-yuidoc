@@ -1,4 +1,4 @@
-# grunt-contrib-yuidoc [![Build Status](https://secure.travis-ci.org/gruntjs/grunt-contrib-yuidoc.png?branch=master)](http://travis-ci.org/gruntjs/grunt-contrib-yuidoc)
+# grunt-contrib-yuidoc [![Build Status](https://travis-ci.org/gruntjs/grunt-contrib-yuidoc.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-yuidoc)
 
 > Compile YUIDoc Documentation.
 
@@ -54,16 +54,16 @@ grunt.initConfig({
 
 ## Release History
 
- * 2013-02-14   v0.4.0   First official release for Grunt 0.4.0.
- * 2013-01-22   v0.4.0rc7   Updating grunt/gruntplugin dependencies to rc7. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.
- * 2013-01-08   v0.4.0rc5   Updating to work with grunt v0.4.0rc5.
- * 2012-10-11   v0.3.2   Rename grunt-contrib-lib dep to grunt-lib-contrib.
- * 2012-09-30   v0.3.1   Project options are parsed as templates.
- * 2012-09-22   v0.3.0   Options no longer accepted from global config key.
- * 2012-09-09   v0.2.0   Refactored from grunt-contrib into individual repo.
+ * 2013-02-15   v0.4.0   First official release for Grunt 0.4.0.
+ * 2013-01-23   v0.4.0rc7   Updating grunt/gruntplugin dependencies to rc7. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.
+ * 2013-01-09   v0.4.0rc5   Updating to work with grunt v0.4.0rc5.
+ * 2012-10-12   v0.3.2   Rename grunt-contrib-lib dep to grunt-lib-contrib.
+ * 2012-10-01   v0.3.1   Project options are parsed as templates.
+ * 2012-09-23   v0.3.0   Options no longer accepted from global config key.
+ * 2012-09-10   v0.2.0   Refactored from grunt-contrib into individual repo.
 
 ---
 
 Task submitted by [George Pantazis](http://georgepantazis.com/)
 
-*This file was generated on Sun Mar 10 2013 15:50:26.*
+*This file was generated on Wed Aug 07 2013 16:42:47.*
