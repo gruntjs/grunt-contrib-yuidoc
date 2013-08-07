@@ -2,7 +2,7 @@
  * grunt-contrib-yuidoc
  * http://gruntjs.com/
  *
- * Copyright (c) 2012 George Pantazis, contributors
+ * Copyright (c) 2013 George Pantazis, contributors
  * Licensed under the MIT license.
  */
 
