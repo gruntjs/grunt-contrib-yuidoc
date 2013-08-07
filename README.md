@@ -43,6 +43,7 @@ grunt.initConfig({
       url: '<%= pkg.homepage %>',
       options: {
         paths: 'path/to/source/code/',
+        themedir: 'path/to/custom/theme/',
         outdir: 'where/to/save/docs/'
       }
     }
