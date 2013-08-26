@@ -52,7 +52,16 @@ module.exports = function(grunt) {
     if (kindOf(options.paths) === 'string') {
       options.paths = [ options.paths ];
     }
-    json = (new Y.YUIDoc(options)).run();
+    
+    // Try to parse the options, catch and hand off to stdout handler.
+    //  YUIDoc will throw errors if:
+    //      ... Can not find directory: ./path/doesn't/exist/
+    //      ... Cannot read property 'name' of undefined
+    try {
+      json = (new Y.YUIDoc(options)).run();
+    } catch(e) {
+      grunt.fail.warn('Encountered a problem with your project options (' + e + ')', 1);
+    }
 
     options = Y.Project.mix(json, options);
 
