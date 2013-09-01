@@ -52,7 +52,12 @@ module.exports = function(grunt) {
     if (kindOf(options.paths) === 'string') {
       options.paths = [ options.paths ];
     }
-    json = (new Y.YUIDoc(options)).run();
+    
+    try {
+      json = (new Y.YUIDoc(options)).run();
+    } catch(e) {
+      grunt.warn(e);
+    }
 
     options = Y.Project.mix(json, options);
 
