@@ -1,4 +1,4 @@
-# grunt-contrib-yuidoc [![Build Status](https://travis-ci.org/gruntjs/grunt-contrib-yuidoc.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-yuidoc)
+# grunt-contrib-yuidoc v0.5.0 [![Build Status](https://travis-ci.org/gruntjs/grunt-contrib-yuidoc.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-yuidoc)
 
 > Compile YUIDoc Documentation.
 
@@ -54,6 +54,7 @@ grunt.initConfig({
 
 ## Release History
 
+ * 2013-09-01   v0.5.0   Catches and reports errors thrown by YUIDoc with grunt.warn.
  * 2013-02-15   v0.4.0   First official release for Grunt 0.4.0.
  * 2013-01-23   v0.4.0rc7   Updating grunt/gruntplugin dependencies to rc7. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.
  * 2013-01-09   v0.4.0rc5   Updating to work with grunt v0.4.0rc5.
@@ -66,4 +67,4 @@ grunt.initConfig({
 
 Task submitted by [George Pantazis](http://georgepantazis.com/)
 
-*This file was generated on Wed Aug 07 2013 16:42:47.*
+*This file was generated on Sun Sep 01 2013 13:01:10.*
