@@ -26,10 +26,10 @@ grunt.loadNpmTasks('grunt-contrib-yuidoc');
 ## Yuidoc task
 _Run this task with the `grunt yuidoc` command._
 
-[Visit the YUIDoc project home](http://yui.github.com/yuidoc/) for more information on YUIDocs and commenting syntax.
+[Visit the YUIDoc project home](http://yui.github.io/yuidoc/) for more information on YUIDocs and commenting syntax.
 ### Options
 
-Settings mirror [YUIDoc config](http://yui.github.com/yuidoc/args/index.html).
+Settings mirror [YUIDoc config](http://yui.github.io/yuidoc/args/index.html).
 ### Usage Examples
 
 ```js
