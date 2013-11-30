@@ -35,8 +35,6 @@ module.exports = function(grunt) {
     // 'project'
     options.project = projectData;
 
-    grunt.verbose.writeflags(options, 'Options');
-
     // Catch if required fields are not provided.
     if ( !options.paths ) {
       grunt.fail.warn('No path(s) provided for YUIDoc to scan.');
