@@ -39,27 +39,38 @@ module.exports = function(grunt) {
     if ( !options.paths ) {
       grunt.fail.warn('No path(s) provided for YUIDoc to scan.');
     }
-    if ( !options.outdir ) {
+
+    // Must specify outdir, unless linting.
+    if ( !options.outdir && !options.lint ) {
       grunt.fail.warn('You must specify a directory for YUIDoc output.');
     }
 
-    // ensure destination dir is available
-    grunt.file.mkdir(options.outdir);
+    // No need to generate outdir if linting.
+    if ( !options.lint ) {
+      // ensure destination dir is available
+      grunt.file.mkdir(options.outdir);
+    }
 
     // Input path: array expected, but grunt conventions allows for either a string or an array.
     if (kindOf(options.paths) === 'string') {
       options.paths = [ options.paths ];
     }
-    
+
     try {
       json = (new Y.YUIDoc(options)).run();
     } catch(e) {
       grunt.warn(e);
     }
 
+    // If linting, exit now and do not build documentation.
+    if (options.lint) {
+      done();
+      return;
+    }
+
     options = Y.Project.mix(json, options);
 
-    if (!options.parseOnly) {
+    if ( !options.parseOnly ) {
       var builder = new Y.DocBuilder(options, json);
 
       grunt.log.writeln('Start YUIDoc compile...');
