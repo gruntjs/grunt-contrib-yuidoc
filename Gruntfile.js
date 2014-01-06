@@ -17,7 +17,8 @@ module.exports = function(grunt) {
       all: [
         'Gruntfile.js',
         'tasks/*.js',
-        '<%= nodeunit.tests %>'
+        '<%= nodeunit.compile %>',
+        '<%= nodeunit.lint %>',
       ],
       options: {
         jshintrc: '.jshintrc'
@@ -42,6 +43,17 @@ module.exports = function(grunt) {
         }
       },
 
+      lintA: {
+        'name': 'Grunt Test',
+        'description': 'Grunt Test Description',
+        'version': '1.2.1',
+        'url': 'http://test.com',
+        options: {
+          lint: true,
+          paths: 'test/fixtures/app'
+        }
+      },
+
       compileB: {
         'name': 'Grunt Test',
         'description': 'Grunt Test Description',
@@ -56,6 +68,20 @@ module.exports = function(grunt) {
         }
       },
 
+      lintB: {
+        'name': 'Grunt Test',
+        'description': 'Grunt Test Description',
+        'version': '1.2.1',
+        'url': 'http://test.com/',
+        options: {
+          lint: true,
+          paths: [
+            'test/fixtures/app/',
+            'test/fixtures/otherapp/'
+          ]
+        }
+      },
+
       compileC: {
         'name': "Grunt Test <%= 'Title' %>",
         'description': 'Description Text for <%= pkg.name %>',
@@ -65,12 +91,24 @@ module.exports = function(grunt) {
           paths: 'test/fixtures/app/',
           outdir: 'tmp/yuidocc/'
         }
-      }
+      },
+
+      lintC: {
+        'name': "Grunt Test <%= 'Title' %>",
+        'description': 'Description Text for <%= pkg.name %>',
+        'version': '<%= pkg.version %>',
+        'url': 'http://test.com/',
+        options: {
+          lint: true,
+          paths: 'test/fixtures/app/'
+        }
+      },
     },
 
     // Unit tests.
     nodeunit: {
-      tests: ['test/*_test.js']
+      compile: ['test/yuidoc_test.js'],
+      lint: ['test/lint_test.js']
     }
   });
 
@@ -85,7 +123,17 @@ module.exports = function(grunt) {
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['clean', 'yuidoc', 'nodeunit']);
+  grunt.registerTask('test', [
+    'clean',
+    'yuidoc:lintA',
+    'yuidoc:lintB',
+    'yuidoc:lintC',
+    'nodeunit:lint',
+    'yuidoc:compileA',
+    'yuidoc:compileB',
+    'yuidoc:compileC',
+    'nodeunit:compile'
+  ]);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test', 'build-contrib']);
