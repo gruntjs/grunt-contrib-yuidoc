@@ -50,7 +50,7 @@ module.exports = function(grunt) {
     if (kindOf(options.paths) === 'string') {
       options.paths = [ options.paths ];
     }
-    
+
     try {
       json = (new Y.YUIDoc(options)).run();
     } catch(e) {
@@ -59,7 +59,9 @@ module.exports = function(grunt) {
 
     options = Y.Project.mix(json, options);
 
-    if (!options.parseOnly) {
+    if (options.parseOnly) {
+      done();
+    } else {
       var builder = new Y.DocBuilder(options, json);
 
       grunt.log.writeln('Start YUIDoc compile...');

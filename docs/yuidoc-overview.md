@@ -1,1 +1,1 @@
-[Visit the YUIDoc project home](http://yui.github.com/yuidoc/) for more information on YUIDocs and commenting syntax.
+[Visit the YUIDoc project home](http://yui.github.io/yuidoc/) for more information on YUIDocs and commenting syntax.

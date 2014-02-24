@@ -1,3 +1,7 @@
+v0.5.1:
+  date: 2014-02-24
+  changes:
+    - Fixes 'parseOnly' callback
 v0.5.0:
   date: 2013-09-01
   changes:

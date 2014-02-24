@@ -56,6 +56,19 @@ module.exports = function(grunt) {
         }
       },
 
+      compileParseOnly: {
+        'name': "Grunt Test <%= 'Title' %>",
+        'description': 'Description Text for <%= pkg.name %>',
+        'version': '<%= pkg.version %>',
+        'url': 'http://test.com/',
+        options: {
+          // NOTE: parseOnly
+          parseOnly: true,
+          paths: 'test/fixtures/app/',
+          outdir: 'tmp/yuidocparseOnly/'
+        }
+      },
+
       compileC: {
         'name': "Grunt Test <%= 'Title' %>",
         'description': 'Description Text for <%= pkg.name %>',

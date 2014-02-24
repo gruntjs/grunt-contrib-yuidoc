@@ -1,3 +1,3 @@
 # Options
 
-Settings mirror [YUIDoc config](http://yui.github.com/yuidoc/args/index.html).
+Settings mirror [YUIDoc config](http://yui.github.io/yuidoc/args/index.html).
