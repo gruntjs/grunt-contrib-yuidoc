@@ -1,3 +1,7 @@
+v0.5.2:
+  date: 2014-03-12
+  changes:
+    - Make sure to write JSON data with 'parseOnly'
 v0.5.1:
   date: 2014-02-24
   changes:

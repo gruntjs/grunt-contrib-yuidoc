@@ -1,4 +1,4 @@
-# grunt-contrib-yuidoc v0.5.1 [![Build Status](https://travis-ci.org/gruntjs/grunt-contrib-yuidoc.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-yuidoc)
+# grunt-contrib-yuidoc v0.5.2 [![Build Status](https://travis-ci.org/gruntjs/grunt-contrib-yuidoc.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-yuidoc)
 
 > Compile YUIDoc Documentation.
 
@@ -54,6 +54,7 @@ grunt.initConfig({
 
 ## Release History
 
+ * 2014-03-12   v0.5.2   Make sure to write JSON data with 'parseOnly'
  * 2014-02-24   v0.5.1   Fixes 'parseOnly' callback
  * 2013-09-01   v0.5.0   Catches and reports errors thrown by YUIDoc with grunt.warn.
  * 2013-02-15   v0.4.0   First official release for Grunt 0.4.0.
@@ -68,4 +69,4 @@ grunt.initConfig({
 
 Task submitted by [George Pantazis](http://georgepantazis.com/)
 
-*This file was generated on Mon Feb 24 2014 16:47:17.*
+*This file was generated on Wed Mar 12 2014 12:33:04.*

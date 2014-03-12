@@ -12,6 +12,8 @@ module.exports = function(grunt) {
 
   grunt.registerMultiTask('yuidoc', 'Create YUIDocs', function() {
 
+    var fs = require('fs');
+    var path = require('path');
     var kindOf = grunt.util.kindOf;
     var Y = require('yuidocjs');
     var done = this.async();
@@ -60,6 +62,7 @@ module.exports = function(grunt) {
     options = Y.Project.mix(json, options);
 
     if (options.parseOnly) {
+      fs.writeFileSync(path.join(options.outdir, 'data.json'), JSON.stringify(json, null, 4));
       done();
     } else {
       var builder = new Y.DocBuilder(options, json);
