@@ -1,4 +1,4 @@
-# grunt-contrib-yuidoc v0.5.2 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-yuidoc.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-yuidoc) <a href="https://ci.appveyor.com/project/gruntjs/grunt-contrib-yuidoc"><img src="https://ci.appveyor.com/api/projects/status/ndcpmex6s8yn9er6/branch/master" alt="Build Status: Windows" height="18" /></a>
+# grunt-contrib-yuidoc v0.5.2 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-yuidoc.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-yuidoc)
 
 > Compile YUIDoc Documentation.
 
@@ -69,4 +69,4 @@ grunt.initConfig({
 
 Task submitted by [George Pantazis](http://georgepantazis.com/)
 
-*This file was generated on Tue Apr 08 2014 17:03:34.*
+*This file was generated on Sun Dec 28 2014 12:23:50.*
