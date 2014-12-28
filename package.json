@@ -27,7 +27,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "yuidocjs": "~0.3.45"
+    "yuidocjs": "~0.4.0"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.2",
