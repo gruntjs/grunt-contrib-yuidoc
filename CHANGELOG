@@ -1,3 +1,7 @@
+v0.6.0:
+  date: 2014-12-28
+  changes:
+    - Update to yuidocjs 0.4.0.
 v0.5.2:
   date: 2014-03-12
   changes:
