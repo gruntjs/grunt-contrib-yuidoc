@@ -54,7 +54,7 @@ grunt.initConfig({
 
 ## Release History
 
- * 2014-12-28   v0.7.0   Update to yuidocjs 0.5.0.
+ * 2015-01-21   v0.7.0   Update to yuidocjs 0.5.0.
  * 2014-12-28   v0.6.0   Update to yuidocjs 0.4.0.
  * 2014-03-12   v0.5.2   Make sure to write JSON data with 'parseOnly'
  * 2014-02-24   v0.5.1   Fixes 'parseOnly' callback
@@ -71,4 +71,4 @@ grunt.initConfig({
 
 Task submitted by [George Pantazis](http://georgepantazis.com/)
 
-*This file was generated on Wed Jan 21 2015 09:39:02.*
+*This file was generated on Wed Jan 21 2015 09:41:38.*
