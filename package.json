@@ -1,6 +1,6 @@
 {
   "name": "grunt-contrib-yuidoc",
-  "description": "Compile YUIDoc Documentation.",
+  "description": "Compile YUIDoc Documentation",
   "version": "0.8.0",
   "author": {
     "name": "Grunt Team",

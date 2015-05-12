@@ -57,7 +57,7 @@ module.exports = function(grunt) {
       },
 
       compileParseOnly: {
-        'name': "Grunt Test <%= 'Title' %>",
+        'name': 'Grunt Test <%= \'Title\' %>',
         'description': 'Description Text for <%= pkg.name %>',
         'version': '<%= pkg.version %>',
         'url': 'http://test.com/',
@@ -70,7 +70,7 @@ module.exports = function(grunt) {
       },
 
       compileC: {
-        'name': "Grunt Test <%= 'Title' %>",
+        'name': 'Grunt Test <%= \'Title\' %>',
         'description': 'Description Text for <%= pkg.name %>',
         'version': '<%= pkg.version %>',
         'url': 'http://test.com/',

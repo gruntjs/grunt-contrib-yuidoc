@@ -17,7 +17,7 @@ module.exports = function(grunt) {
     var kindOf = grunt.util.kindOf;
     var Y = require('yuidocjs');
     var done = this.async();
-    var starttime = Date.now();
+    var startTime = Date.now();
     var json;
 
     var options = this.options({
@@ -38,10 +38,10 @@ module.exports = function(grunt) {
     options.project = projectData;
 
     // Catch if required fields are not provided.
-    if ( !options.paths ) {
+    if (!options.paths) {
       grunt.fail.warn('No path(s) provided for YUIDoc to scan.');
     }
-    if ( !options.outdir ) {
+    if (!options.outdir) {
       grunt.fail.warn('You must specify a directory for YUIDoc output.');
     }
 
@@ -69,11 +69,11 @@ module.exports = function(grunt) {
 
       grunt.log.writeln('Start YUIDoc compile...');
       grunt.log.writeln('Scanning: ' + grunt.log.wordlist(options.paths));
-      grunt.log.writeln('Output: ' + (options.outdir).cyan);
+      grunt.log.writeln('Output: ' + options.outdir.cyan);
 
       builder.compile(function() {
-        var endtime = Date.now();
-        grunt.log.writeln('YUIDoc compile completed in ' + ((endtime - starttime) / 1000) + ' seconds');
+        var secondsTaken = (Date.now() - startTime) / 1000;
+        grunt.log.writeln('YUIDoc compile completed in ' + secondsTaken + ' seconds');
         done();
       });
     }

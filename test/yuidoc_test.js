@@ -1,8 +1,9 @@
+'use strict';
+
 var grunt = require('grunt');
 
 exports.yuidoc = {
   main: function(test) {
-    'use strict';
 
     var expect, result, data;
     test.expect(6);
