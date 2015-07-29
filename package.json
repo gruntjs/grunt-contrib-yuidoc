@@ -15,7 +15,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "yuidocjs": "^0.7.0"
+    "yuidocjs": "^0.8.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
