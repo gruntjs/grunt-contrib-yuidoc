@@ -55,7 +55,7 @@ module.exports = function(grunt) {
 
     try {
       json = (new Y.YUIDoc(options)).run();
-    } catch(e) {
+    } catch (e) {
       grunt.warn(e);
     }
 
