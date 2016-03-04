@@ -1,3 +1,9 @@
+v1.0.0:
+  date: 2015-08-24
+  changes:
+    - Bump yuidocjs version to v0.10.0.
+    - peerDeps updates.
+    - doc updates.
 v0.10.0:
   date: 2015-08-24
   changes:

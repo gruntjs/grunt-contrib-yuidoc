@@ -1,11 +1,10 @@
-# grunt-contrib-yuidoc v0.10.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-yuidoc.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-yuidoc) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/ndcpmex6s8yn9er6/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-yuidoc/branch/master)
+# grunt-contrib-yuidoc v1.0.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-yuidoc.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-yuidoc) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/ndcpmex6s8yn9er6/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-yuidoc/branch/master)
 
 > Compile YUIDoc Documentation
 
 
 
 ## Getting Started
-This plugin requires Grunt `>=0.4.0`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -54,7 +53,8 @@ grunt.initConfig({
 
 ## Release History
 
- * 2015-06-29   v0.10.0   Update to yuidocjs ^0.9.0.
+ * 2015-08-24   v1.0.0   Bump yuidocjs version to v0.10.0. peerDeps updates. doc updates.
+ * 2015-08-24   v0.10.0   Update to yuidocjs ^0.9.0.
  * 2015-06-29   v0.9.0   Update to yuidocjs 0.8.0.
  * 2015-05-11   v0.8.0   Update to yuidocjs 0.7.0.
  * 2015-01-21   v0.7.0   Update to yuidocjs 0.5.0.
@@ -74,4 +74,4 @@ grunt.initConfig({
 
 Task submitted by [George Pantazis](http://georgepantazis.com/)
 
-*This file was generated on Mon Aug 24 2015 10:46:43.*
+*This file was generated on Fri Mar 04 2016 17:16:16.*
