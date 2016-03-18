@@ -53,15 +53,15 @@ grunt.initConfig({
 
 ## Release History
 
- * 2015-08-24   v1.0.0   Bump yuidocjs version to v0.10.0. peerDeps updates. doc updates.
+ * 2015-08-24   v1.0.0   Bump yuidocjs version to v0.10.0. peerDeps updates. Doc updates.
  * 2015-08-24   v0.10.0   Update to yuidocjs ^0.9.0.
  * 2015-06-29   v0.9.0   Update to yuidocjs 0.8.0.
  * 2015-05-11   v0.8.0   Update to yuidocjs 0.7.0.
  * 2015-01-21   v0.7.0   Update to yuidocjs 0.5.0.
  * 2014-12-28   v0.6.0   Update to yuidocjs 0.4.0.
- * 2014-03-12   v0.5.2   Make sure to write JSON data with 'parseOnly'
- * 2014-02-24   v0.5.1   Fixes 'parseOnly' callback
- * 2013-09-01   v0.5.0   Catches and reports errors thrown by YUIDoc with grunt.warn.
+ * 2014-03-12   v0.5.2   Make sure to write JSON data with `parseOnly`.
+ * 2014-02-24   v0.5.1   Fixes `parseOnly` callback.
+ * 2013-09-01   v0.5.0   Catches and reports errors thrown by YUIDoc with `grunt.warn`.
  * 2013-02-15   v0.4.0   First official release for Grunt 0.4.0.
  * 2013-01-23   v0.4.0rc7   Updating grunt/gruntplugin dependencies to rc7. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.
  * 2013-01-09   v0.4.0rc5   Updating to work with grunt v0.4.0rc5.
@@ -74,4 +74,4 @@ grunt.initConfig({
 
 Task submitted by [George Pantazis](http://georgepantazis.com/)
 
-*This file was generated on Fri Mar 04 2016 17:16:16.*
+*This file was generated on Fri Mar 18 2016 19:12:25.*

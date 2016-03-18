@@ -3,7 +3,7 @@ v1.0.0:
   changes:
     - Bump yuidocjs version to v0.10.0.
     - peerDeps updates.
-    - doc updates.
+    - Doc updates.
 v0.10.0:
   date: 2015-08-24
   changes:
@@ -27,15 +27,15 @@ v0.6.0:
 v0.5.2:
   date: 2014-03-12
   changes:
-    - Make sure to write JSON data with 'parseOnly'
+    - Make sure to write JSON data with `parseOnly`.
 v0.5.1:
   date: 2014-02-24
   changes:
-    - Fixes 'parseOnly' callback
+    - Fixes `parseOnly` callback.
 v0.5.0:
   date: 2013-09-01
   changes:
-    - Catches and reports errors thrown by YUIDoc with grunt.warn.
+    - Catches and reports errors thrown by YUIDoc with `grunt.warn`.
 v0.4.0:
   date: 2013-02-15
   changes:
